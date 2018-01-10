@@ -36,3 +36,11 @@
     float nextX = cos(radians(angle)) * force;
     float nextY = sin(radians(angle)) * force;
     float nextZ = tan(radians(angle)) * force;
+
+## Calculating the next position for an object rotating around a circle:
+> Method #1 (Using cosine and sine):
+
+    posX = centerX + cos(time)*radius;
+    posY = centerY + sin(time)*radius;
+
+> `time` is a value that could increase or decrease
